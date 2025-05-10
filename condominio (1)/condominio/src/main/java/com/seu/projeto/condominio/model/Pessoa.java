@@ -9,7 +9,7 @@ import java.util.List;
 public class Pessoa {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer idPessoa;
+    private Integer id; //aqui tava escrito idPessoa e o SQL chorou. Tem que ser somente id
 
     @Column(nullable = false, unique = true)
     private String cpf;
